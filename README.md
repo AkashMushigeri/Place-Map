@@ -1,19 +1,10 @@
 # 🗺️ PlaceMap
 
-### AI-Powered Company-Specific Career Preparation Platform
+## AI-Powered Company-Specific Career Preparation Platform
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Status: Architecture & Prototype](https://img.shields.io/badge/Status-Initial%20Architecture-teal.svg)](#development-roadmap)
-[![Target: Tier--1%20Placement%20Readiness](https://img.shields.io/badge/Target-MAANG%20%26%20Product%20Firms-orange.svg)](#dream-company--target-role-mapping)
-[![Architecture: Autonomous%20Agentic](https://img.shields.io/badge/Architecture-Autonomous%20Career%20GPS-purple.svg)](#the-ai-career-guide)
+PlaceMap is an AI-powered career preparation platform that guides students toward their dream companies through personalized, structured, step-by-step learning roadmaps.
 
----
-
-## 🧭 Executive Summary
-
-Every year, millions of computer science and engineering students strive to secure high-impact roles at top-tier tech companies—MAANG, high-growth product unicorns, quantitative trading firms, and elite startups. Yet, the vast majority follow generic advice, get stuck in tutorial hell, grind random LeetCode problems without direction, and build cookie-cutter to-do apps that fail to pass initial technical screenings.
-
-**PlaceMap** transforms career preparation from a chaotic guessing game into a deterministic, company-calibrated engineering process. Acting as an intelligent **Career GPS**, PlaceMap maps your current baseline skills against the exact, unvarnished hiring bars of your dream companies and target roles, calculates the precise skill gap delta, and generates an adaptive, daily actionable roadmap with end-to-end guidance.
+The core concept is:
 
 ```text
 Current Skills
@@ -22,16 +13,40 @@ Dream Company
       ↓
 Target Role
       ↓
-Skill Gap
+Skill Gap Analysis
       ↓
 Personalized Roadmap
       ↓
-Projects + Practice
+Learning + Practice
+      ↓
+Projects
       ↓
 Interview Preparation
       ↓
 Placement Readiness
 ```
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Status: Architecture & Prototype](https://img.shields.io/badge/Status-Initial%20Architecture-teal.svg)](#development-roadmap)
+[![Target: Tier--1%20Placement%20Readiness](https://img.shields.io/badge/Target-MAANG%20%26%20Product%20Firms-orange.svg)](#-dream-company--target-role-mapping)
+[![Architecture: Autonomous%20Agentic](https://img.shields.io/badge/Architecture-Autonomous%20Career%20GPS-purple.svg)](#-ai-career-guide)
+
+---
+
+## 🧭 Project Overview
+
+PlaceMap acts as an autonomous **AI-powered career guide** rather than a generic chatbot. 
+
+Instead of offering surface-level answers or generic advice, PlaceMap conducts an in-depth diagnostic analysis of:
+* **Student Education**: Degree, major/branch, graduation year, academic performance, and institutional context.
+* **Current Skills**: Languages, frameworks, databases, developer tools, and cloud infrastructure.
+* **Programming Knowledge**: Practical understanding of core computer science fundamentals, data structures, algorithms, and software architecture.
+* **Projects**: Code quality, architectural complexity, deployment status, and engineering rigor of past repositories.
+* **Experience**: Internships, open-source contributions, hackathons, and real-world engineering work.
+* **Target Company**: The exact company hiring bar and evaluation criteria (e.g., Google, Amazon, Uber, Stripe).
+* **Target Role**: Specific job profile and level (e.g., SDE-1, Backend Engineer, Frontend Engineer).
+
+By cross-referencing the student's profile against verified company hiring rubrics, PlaceMap identifies exact skill gaps and synthesizes a personalized, adaptive preparation roadmap.
 
 ---
 
@@ -47,46 +62,78 @@ PlaceMap is built around an intuitive, high-agency mental model:
 | **Turn-by-Turn Navigation** | **AI Career Guide (Autonomous Mentor)** |
 | **Traffic / Detour Rerouting** | **Adaptive Calibration (When pace or targets change)** |
 
-The **AI Career Guide** continuously evaluates and answers five foundational questions for the student:
-1. **Where am I?** *(Diagnostic skill audit, project analysis, coding strength)*
-2. **Where am I going?** *(Hiring bar, interview rounds, and tech expectations of the target company)*
-3. **What am I missing?** *(Quantified skill-gap delta across CS fundamentals, DSA, system design, and practical stack)*
-4. **How do I close the gap?** *(Step-by-step milestones, production-grade projects, curated high-signal resources)*
-5. **What should I do next?** *(High-leverage, daily actionable tasks calibrated to available study hours)*
+---
+
+## ⚠️ Problem
+
+Engineering students face severe structural challenges when preparing for competitive tech placements:
+
+* **Not knowing what skills companies expect**: Hiring standards differ widely across tier-1 tech firms, scaleups, and fintechs, leaving students guessing.
+* **Learning random technologies**: Jumping between unrelated frameworks, trendy tools, and fragmented tutorials without a cohesive strategy.
+* **Following generic roadmaps**: Using one-size-fits-all roadmaps that treat an applicant for a distributed systems role at Google the same as a frontend developer at a local agency.
+* **Not knowing which skills they are missing**: Lacking an objective diagnostic to identify exact blind spots across DSA, System Design, and CS core.
+* **Not knowing what projects to build**: Wasting weeks building generic to-do apps or tutorial clones that recruiters dismiss immediately.
+* **Difficulty tracking preparation**: Struggling to measure daily progress, velocity, and true readiness against a placement timeline.
+* **Difficulty preparing for company-specific interviews**: Not knowing the exact format, question patterns, or behavioral rubrics expected in specific company interview rounds.
+* **Not knowing what to do next**: Paralyzed by cognitive overload and lack of actionable, daily prioritized tasks.
 
 ---
 
-## ⚠️ The Problem: The Modern Placement Dilemma
+## 💡 Proposed Solution
 
-Engineering candidates face severe structural bottlenecks during career preparation:
+PlaceMap provides a company-calibrated, proactive career navigation platform. It systematically connects:
 
-1. **Generic, One-Size-Fits-All Roadmaps**: Standard internet roadmaps treat an applicant for a distributed systems role at Google the same as a frontend developer at a mid-tier agency.
-2. **Hiring Bar Opacity**: Students lack verified visibility into what specific companies actually evaluate across online assessments (OAs), technical rounds, and system design interviews.
-3. **Tutorial Hell & Low-Impact Projects**: Countless resumes feature generic e-commerce clones or calculator apps that provide zero signal regarding production engineering, concurrency, testing, or API design.
-4. **LeetCode Blindness**: Candidates solve hundreds of disconnected problems without internalizing underlying algorithmic patterns (e.g., sliding window, two-pointer, dynamic programming states, monotonic stacks) or company-specific problem frequency.
-5. **Lack of Feedback Loops**: Without senior engineering mentorship, students cannot assess whether their resumes pass ATS filters, whether their code meets industry quality, or how to articulate architectural trade-offs in interviews.
+```text
+Student Profile
++
+Dream Company
++
+Target Role
+```
+
+to:
+
+```text
+Skill Gap
++
+Personalized Roadmap
++
+Daily Tasks
++
+Projects
++
+Learning Resources
++
+DSA
++
+Interview Preparation
++
+Progress Tracking
+```
+
+By unifying diagnostic evaluation, company benchmark mapping, phased roadmap generation, daily actionable sprints, high-signal project guides, pattern-based DSA tracking, mock interview simulation, and real-time progress indexing, PlaceMap turns unpredictable placement preparation into a deterministic, achievable path.
 
 ---
 
-## 💡 The Solution: PlaceMap
+## 🤖 AI Career Guide
 
-PlaceMap provides a unified, company-specific preparation platform powered by an intelligent, autonomous **AI Career Guide**. Instead of acting as a passive question-answering chatbot, PlaceMap is a persistent, proactive career operating system that:
+The central AI agent of the platform is called the **PlaceMap Career Guide**.
 
-- **Audits** the student's true competency through verified diagnostic evaluations and portfolio parsing.
-- **Deconstructs** target companies into granular, round-by-round hiring rubrics and technical criteria.
-- **Formulates** a custom roadmap segmented into achievable, phased milestones.
-- **Delivers** daily high-impact action items with integrated execution sandboxes.
-- **Re-routes** dynamically whenever a student masters a topic faster or struggles with complex concepts.
+The PlaceMap Career Guide is not an ephemeral chat widget or a generic ChatGPT-style chatbot that passively waits for queries. Instead, it is an autonomous, persistent mentor equipped with memory, analytical tools, and deep context of the student's actual profile and real-time progress.
 
----
+The agent continuously answers five foundational questions:
 
-## 🤖 The AI Career Guide
-
-The **AI Career Guide** is the intellectual core of PlaceMap. It is not an ephemeral chat widget—it is an autonomous agent with memory, tooling, and deep context of the student's journey.
+```text
+1. Where am I?
+2. Where do I want to go?
+3. What skills am I missing?
+4. How do I close those gaps?
+5. What should I do next?
+```
 
 ```text
 ┌─────────────────────────────────────────────────────────────┐
-│                      AI Career Guide                        │
+│                   PlaceMap Career Guide                     │
 ├─────────────────┬─────────────────────────┬─────────────────┤
 │ Context Memory  │    Analytical Tools     │ Proactive Logic │
 │ • Past Submissions • Skill Gap Calculator    │ • Daily Check-in│
@@ -95,26 +142,37 @@ The **AI Career Guide** is the intellectual core of PlaceMap. It is not an ephem
 └─────────────────┴─────────────────────────┴─────────────────┘
 ```
 
-### Key Capabilities of the AI Guide:
-- **Proactive Accountability**: Checks in on daily streaks, detects bottlenecks when tasks remain incomplete, and breaks difficult milestones into micro-steps.
-- **Context-Aware Feedback**: Remembers prior interview simulation errors, resume iterations, and project architecture decisions.
-- **Zero Hallucination Alignment**: Relies on curated, company-specific hiring rubrics and canonical industry knowledge bases.
-- **Cognitive Load Balancing**: Adapts daily task volume based on the candidate's available weekly hours and academic calendar.
+### Key Capabilities & Behavioral Principles:
+* **Grounding in Actual Profile**: Operates exclusively using the candidate's verified skills, past problem attempts, project commits, and target company data—never generic canned responses.
+* **Proactive Accountability**: Checks in on daily streaks, detects bottlenecks when tasks stall, and breaks difficult milestones into micro-steps.
+* **Context-Aware Feedback**: Remembers prior interview simulation errors, resume iterations, and project architecture decisions.
+* **Zero-Hallucination Alignment**: Relies on verified company rubrics, canonical engineering texts, and authentic interview debriefs.
+* **Cognitive Load Balancing**: Adapts daily task volume based on the candidate's available weekly hours and academic calendar.
 
 ---
 
-## 👤 Student Profile & Diagnostic Audit
+## 👤 Student Profile
 
-PlaceMap constructs a rich, multidimensional digital representation of the candidate:
+PlaceMap constructs and maintains a rich, multidimensional candidate profile:
 
-- **Technical Competencies**: Languages, frameworks, databases, developer tools, and cloud infrastructure.
-- **Verified Proficiency Levels**:
-  - `Beginner`: Understands basic syntax and core concepts; requires guidance to implement features.
-  - `Intermediate`: Builds functional modules independently; understands standard APIs and libraries.
-  - `Advanced`: Optimizes performance, manages concurrency, handles edge cases, and writes idiomatic code.
-  - `Mastery`: Architectures complex systems, reasons through trade-offs, profiles bottlenecks, and mentors others.
-- **Portfolio & Artifact Ingestion**: Integrates with GitHub profiles, past projects, code snippets, LeetCode handles, and uploaded resumes.
-- **Time Budget & Constraints**: Daily commitment capacity (e.g., 2 hrs/day on weekdays, 5 hrs/day on weekends) and target placement timeline (e.g., 3 months, 6 months, 12 months).
+* **Name & Contact Information**: Candidate identity, portfolio link, LinkedIn, GitHub, and professional handles.
+* **Student Education**: Degree program, major/branch, graduation year, academic performance/CGPA, and college tier/university context.
+* **Current Skills & Programming Knowledge**:
+  * *Languages*: Python, Java, C++, TypeScript, Go, etc.
+  * *Frameworks & Libraries*: React, Next.js, Node.js, FastAPI, Spring Boot, etc.
+  * *Databases & Storage*: PostgreSQL, MySQL, MongoDB, Redis, etc.
+  * *Developer Tools & DevOps*: Git, Docker, Kubernetes, Linux, AWS, CI/CD pipelines.
+* **Computer Science Fundamentals**: Verified understanding of Operating Systems, DBMS, Computer Networks, Object-Oriented Design, and Concurrency.
+* **Verified Proficiency Levels**: Granular categorization per skill:
+  * `Beginner`: Understands syntax and basic concepts; requires step-by-step guidance.
+  * `Intermediate`: Builds functional modules independently; understands standard libraries and patterns.
+  * `Advanced`: Optimizes performance, manages concurrency, handles edge cases, and writes idiomatic code.
+  * `Mastery`: Architectures complex systems, reasons through trade-offs, and debugs deep production issues.
+* **Projects & Portfolio**: GitHub repositories, commit history, system architecture, live deployment links, and engineering depth.
+* **Experience & Internships**: Prior internships, open-source contributions, research projects, freelance work, and hackathons.
+* **DSA & Problem-Solving Profile**: LeetCode/Codeforces handles, solved problem counts across difficulty tiers, and pattern coverage.
+* **Target Company & Target Role**: Target company selection (Google, Amazon, Uber, Stripe, etc.) and target role (SDE-1, Backend, Frontend, Full Stack).
+* **Time Budget & Constraints**: Daily commitment capacity (e.g., 2 hrs/day on weekdays, 5 hrs/day on weekends) and target placement timeline (e.g., 3 months, 6 months, 12 months).
 
 ---
 
