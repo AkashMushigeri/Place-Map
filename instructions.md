@@ -32,6 +32,38 @@
 
 ---
 
+## 2.1 Prototype First & MVP Development Principles
+
+> **IMPORTANT**:
+> The prototype is intentionally lightweight.
+> Do not over-engineer.
+> Do not prematurely build enterprise infrastructure.
+> The architecture should remain clean enough to evolve into a production application later.
+
+The PlaceMap Prototype demonstrates end-to-end user value across these foundational pillars:
+
+1. **Prototype First**: Prioritize a functional user journey over complex distributed backends.
+2. **Functional UX**: Seamless navigation connecting diagnostic inputs to actionable tasks and live simulation.
+3. **AI Career Guide**: Context-aware mentorship engine responding with student-calibrated priorities.
+4. **Student Profile**: Diagnostic baseline capturing academic details, languages, skills, and existing projects.
+5. **Company Selection**: Calibrated benchmarks across Tier 1, scaleup, and IT services hiring models.
+6. **Role Selection**: Domain-specific target competencies (Software Engineer, AI/ML, Frontend, Backend, etc.).
+7. **Skill Gap**: Mathematical delta quantification across P0 Showstoppers, P1 Differentiators, and P2 Value-Adds.
+8. **Roadmap**: Milestone-gated 5-phase preparation path (Foundations, DSA, Core CS, Projects, Interviews).
+9. **Daily Tasks**: Actionable daily sprints with completion tracking and velocity impact.
+10. **Projects**: Role-specific, production-grade architectural blueprints and milestone breakdowns.
+11. **Resources**: Canonical, zero-fluff learning references and documentation links.
+12. **DSA**: 15 core algorithmic archetypes with pattern tags and problem completion tracking.
+13. **Interview**: High-fidelity mock interview simulator across 5 tracks with instant rubric scoring.
+14. **Resume**: ATS readiness analyzer with keyword delta quantification and metric recommendations.
+15. **Progress**: Comprehensive multi-dimensional preparation analytics and streak monitoring.
+16. **Adaptive Guidance**: Automatic route recalculation when skill levels change or milestones are cleared.
+17. **LocalStorage**: Client-side persistence retaining user state, tasks, and progress across sessions.
+18. **AI Service Abstraction**: Modular service interfaces (`aiService.js`) designed for plug-and-play LLM upgrades.
+19. **Future Production Upgrade**: Clean boundaries ready for PostgreSQL, NextAuth, vector embeddings, and real-time collaboration.
+
+---
+
 ## 3. End-to-End User Journey
 
 ```text
@@ -518,3 +550,33 @@ In all future turns of this project:
 - Respect the product identity as an **autonomous Career GPS**, never degrade it into a generic chat interface.
 - Keep all code modular, clean, and production-ready.
 - Before writing code, reference the specific phase and section from this document.
+
+---
+
+## 34. "Zero to Hero" Career Road & Gamification Specification
+
+### 34.1 The Visual Level Road
+- **Node Progression**: 16 interconnected level nodes spanning 4 distinct journey zones (Foundations Valley, Algorithmic Peaks, Engineering Metropolis, Offer Summit).
+- **Node States**:
+  - `completed` (✓): Emerald badge, checkmark, level cleared.
+  - `current` (🌟): Pulsing glowing border, highlighted CTA, active checkpoint.
+  - `available` (▶): Unlocked, ready to attempt.
+  - `locked` (🔒): Grayed out, prerequisites required.
+  - `isBossLevel` (👑): Milestone checkpoint awarding +500 XP and unlocking the next zone.
+- **S-Curve Geometry**: Alternating horizontal offsets (`center -> left -> center -> right -> center`) with connected SVG gradient paths creating a cohesive journey toward the Dream Company summit.
+
+### 34.2 Daily Mission Sprint & Habit Loop
+- **Sprint Routine**: 4 daily micro-commitments totaling ~90 minutes:
+  1. Learn (30m): Concept comprehension.
+  2. Practice (30m): Pattern drills & coding exercises.
+  3. Build (20m): Practical implementation subroutine.
+  4. Review (10m): Quick checkpoint self-assessment.
+- **Progression Metrics**:
+  - Streaks (🔥): Incremented daily upon task execution.
+  - Career XP (⚡): Rewarded for level completions (+500 XP) and daily mission sprints (+100 XP).
+  - Checkpoint Quizzes: In-modal interactive knowledge checks verifying mastery before marking levels complete.
+
+### 34.3 Streaming AI Career Mentor
+- **Conversational Subsystem**: ChatGPT-style full-screen (`/guide`) and floating drawer interfaces.
+- **Context-Grounded Reasoning**: System prompts incorporate student profile, active level, target company rubric, and skill gap delta.
+- **Rendering Standards**: Markdown formatting with code syntax highlighting, 1-click clipboard copying, Big-O complexity callouts, and multi-session chat histories.

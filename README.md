@@ -25,13 +25,29 @@ Interview Preparation
       ↓
 Placement Readiness
 ```
+---
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Status: Architecture & Prototype](https://img.shields.io/badge/Status-Initial%20Architecture-teal.svg)](#development-roadmap)
-[![Target: Tier--1%20Placement%20Readiness](https://img.shields.io/badge/Target-MAANG%20%26%20Product%20Firms-orange.svg)](#-dream-company--target-role-mapping)
-[![Architecture: Autonomous%20Agentic](https://img.shields.io/badge/Architecture-Autonomous%20Career%20GPS-purple.svg)](#-ai-career-guide)
+### 📌 Status
+
+> 🚧 **Prototype / MVP**
+>
+> PlaceMap is currently an early functional prototype.
+> The current version focuses on demonstrating:
+>
+> - Personalized career profiling
+> - Skill-gap analysis
+> - Roadmap generation
+> - Daily tasks
+> - Project recommendations
+> - DSA preparation
+> - Interview preparation
+> - AI Career Guide
+> - Progress tracking
+>
+> Production-grade backend, authentication, advanced AI orchestration, verified company intelligence, and scalable infrastructure will be implemented in later versions.
 
 ---
+
 
 ## 🧭 Project Overview
 
@@ -385,25 +401,116 @@ PlaceMap/
 
 ---
 
-## 🚀 Development Roadmap
+## 🎮 "Zero to Hero" Visual Career Road & Progression Engine
 
-- [x] **Phase 1: Architecture, Specification & Repository Setup**
-  - High-level design document and engineering specifications
-  - Repository structure, environment template, and version control initialization
-- [ ] **Phase 2: Core Domain Models & Skill Gap Analysis Engine**
-  - Student profile schemas and target company benchmark rubrics
-  - Quantitative skill gap formula and category priority tagging
-- [ ] **Phase 3: AI Career Guide Agent & Dynamic Roadmap Generator**
-  - Autonomous agent with memory, tooling, and dynamic prompt orchestration
-  - Phased milestone generator with dependency tracking and recalculation algorithms
-- [ ] **Phase 4: Interactive Dashboard & Student Workspace**
-  - Real-time progress visualization, radar charts, and daily focus sprint cards
-  - Embedded AI Career Guide interactive chat drawer
-- [ ] **Phase 5: DSA, Project & Interview Simulation Modules**
-  - 14-pattern DSA tracker with company frequency filtering
-  - High-impact project builder and interactive mock interview agent
-- [ ] **Phase 6: End-to-End Polish, Testing & Deployment**
-  - Performance profiling, security hardening, and production deployment
+PlaceMap transforms career preparation from dry task checklists into an engaging, gamified **Zero-to-Hero progression system** combining the best mechanics of:
+
+* 🗺️ **Google Maps**: Turn-by-turn navigation towards a specific company offer (e.g. Google SDE-1).
+* 🍬 **Candy Crush**: Visual winding S-curve road with 16 interconnected levels, locked stages (🔒), active glowing checkpoint (🌟), completed levels (✓), and high-stakes Boss Levels (👑).
+* 🦉 **Duolingo**: Daily focused sprints (Learn 30m, Practice 30m, Build 20m, Review 10m), study streaks (🔥 7 Days), and Career XP progression (+XP).
+* 💬 **ChatGPT**: Context-grounded AI mentor with real-time streaming, copyable code blocks, Big-O analyses, session history, and universal accessibility.
+
+```text
+                           🏢 OFFER SUMMIT (Google SDE)
+                                ★
+                                │
+                           👑 LEVEL 16: FINAL REHEARSAL & MOCKS
+                                │
+                           ● LEVEL 15: SYSTEM DESIGN AT SCALE
+                              ╱
+                         ● LEVEL 14: ATS RESUME & PORTFOLIO
+                        ╱
+                    👑 LEVEL 12: FULL-STACK CAPSTONE PROJECT
+                      ╲
+                       ● LEVEL 08: ALGORITHMIC MASTERY & GRAPHS
+                        ╲
+                         ● LEVEL 04: C++ FUNDAMENTALS & OOP
+                           │
+                         ● LEVEL 01: ZERO CODING FOUNDATIONS
+```
+
+### 🗺️ The 4 Journey Zones:
+1. **Foundations Valley (Levels 1–4)**: Computational thinking, variables, control flow, functions, memory layout, and OOP without overwhelming jargon.
+2. **Algorithmic Peaks (Levels 5–8)**: Arrays, Two Pointers, Sliding Window, Trees, Graphs, and Dynamic Programming.
+3. **Engineering Metropolis (Levels 9–12)**: Relational databases (SQL), Operating Systems, Computer Networks, Git workflows, and Full-Stack Boss projects.
+4. **Offer Summit (Levels 13–16)**: Low-level & High-level system design, ATS resume verification, behavioral STAR frameworks, and mock interview simulations.
+
+---
+
+## 🚀 Prototype MVP Routes & Features
+
+| Route | Feature Description |
+| :--- | :--- |
+| `/` | **Landing Page** with hero GPS simulation, mini interactive roadmap preview, and quick auth links. |
+| `/signup` & `/login` | **Authentication System** with 1-click immediate demo access as Akash (Google SDE target). |
+| `/onboarding` | **Zero-to-Hero 5-Step Wizard**: Zero-knowledge calibration, company selector, and dynamic route calculator. |
+| `/company-selection` | **Target Company Benchmarks**: Google, Amazon, Microsoft, NVIDIA, Meta, Infosys, and more. |
+| `/role-selection` | **Engineering Profiles**: Software Engineer, Frontend, Backend, Full Stack, AI/ML, DevOps, and Security. |
+| `/career-map` | **Visual Candy Crush Career Map**: Interactive winding road, level modals with quizzes, XP rewards, and level completion. |
+| `/today` | **Today's Focused Mission**: 4-part sprint (Learn, Practice, Build, Review), focus timers, and weekly streak tracker. |
+| `/dashboard` | **Preparation Command Center**: Destination summary, active level checkpoint, daily mission checkboxes, and PRI analytics. |
+| `/guide` / `/career-guide` | **ChatGPT-Style AI Career Mentor**: Real-time streaming, code syntax formatting, session management, and starter cards. |
+| `/profile` | **Student Diagnostic Profile**: Career XP, current level, streak, and target destination recalibration. |
+| `/skill-gap` | **Visual Skill Gap Matrix**: P0 Showstoppers and P1 Differentiators quantified against target rubric. |
+| `/roadmap` | **Phased Preparation Roadmap**: Detailed timeline with weekly tasks and milestone milestones. |
+| `/tasks` | **Action Sprint Manager**: Filterable daily tasks by phase and priority. |
+| `/dsa` | **Pattern-Based DSA Mastery**: 15 algorithmic archetypes with problem tracker. |
+| `/projects` | **Company-Calibrated Projects**: Production-grade architectural blueprints and milestones. |
+| `/interview` | **Simulated Technical & Behavioral Mocks**: Multi-track interview questions with instant scoring. |
+| `/resume` | **ATS Resume Readiness Checker**: Keyword alignment audit and impact rewriter. |
+| `/progress` | **Placement Readiness Analytics**: Multi-dimensional radar charts and velocity projections. |
+| `/settings` | **Preferences & Pacing**: Study budget, experience recalibration, theme toggle, and factory reset. |
+
+---
+
+## ⚡ Quick Start (Local Prototype)
+
+PlaceMap is built as a lightweight, lightning-fast React + Vite application:
+
+```bash
+# 1. Navigate to the frontend directory
+cd frontend
+
+# 2. Install dependencies (if not already installed)
+npm install
+
+# 3. Start the development server
+npm run dev
+
+# 4. Open in browser
+http://localhost:3000
+```
+
+### Production Build Verification:
+```bash
+npm run build
+# Compiles cleanly into dist/ with 0 errors
+```
+
+---
+
+## 🏗️ System Architecture
+
+```text
+┌────────────────────────────────────────────────────────────────────────┐
+│                          React / Vite Frontend                         │
+│   (Career Map, Today's Mission, Dashboard, AI Guide Drawer, Sandbox)   │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │ Local State & Services
+┌───────────────────────────────────▼────────────────────────────────────┐
+│                        Frontend Service Layer                          │
+│                                                                        │
+│   ┌─────────────────────┐  ┌────────────────────┐  ┌────────────────┐ │
+│   │ roadmapService.js   │  │   aiService.js     │  │storageService  │ │
+│   │ (16-Level Generator)│  │ (Contextual Mentor)│  │ (LocalStorage) │ │
+│   └─────────────────────┘  └────────────────────┘  └────────────────┘ │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+┌───────────────────────────────────▼────────────────────────────────────┐
+│                        Local Storage Persistence                       │
+│    (Career Map, Current Level, Career XP, Daily Missions, Streaks)     │
+└────────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
