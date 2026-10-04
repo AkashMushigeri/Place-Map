@@ -1,0 +1,21 @@
+{
+  "name": "placemap",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PlaceMap — AI-Powered Company-Specific Career Preparation Platform (Prototype / MVP)",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "install:all": "npm --prefix frontend install"
+  },
+  "keywords": [
+    "career-guidance",
+    "placement-prep",
+    "roadmap",
+    "dsa",
+    "ai-career-guide"
+  ],
+  "author": "PlaceMap Team",
+  "license": "MIT"
+}
