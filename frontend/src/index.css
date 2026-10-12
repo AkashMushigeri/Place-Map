@@ -1,10 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply font-sans antialiased text-slate-800 bg-slate-50 dark:bg-slate-950 dark:text-slate-100 selection:bg-brand-500 selection:text-white;
+    @apply antialiased text-slate-800 bg-slate-50 dark:bg-slate-950 dark:text-slate-100 selection:bg-brand-500 selection:text-white;
+    font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  label,
+  input,
+  button,
+  textarea,
+  select {
+    font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    font-weight: 700;
   }
 }
 
